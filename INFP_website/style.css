@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Afacad';
+    src: url('"https://fonts.googleapis.com/css2?family=Afacad:wght@400;600;700&family=Courier+Prime&display=swap');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Afacad', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid-paper {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 35px 35px; /* adjust size of grid squares */
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    padding-left: 2.7rem;
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+h1 {
+    padding-top: 18px;
+}
+
+#menu {
+    background-color: transparent;
+    padding: 5px;
+}
+
+nav {
+    font-size: 30px;
+    margin-left: 5em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 1.0rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 3em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#front-page {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+    height: auto;
+    position: relative;
+    max-width: 1200px;
+    padding-bottom: 18vw;
+}
+
+.waving-img {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 45vw; */
+    width: 44em;
+    height: auto;
+    position: absolute;
+}
+
+#title-text {
+    display: flex;
+    position: relative;
+    padding: 2vw;
+    margin: 0 auto;
+}
+
+.title-container {
+    padding-top: 10vw;
+    padding-left: 10vw;
+    margin-left: 20vw;
+    margin-top: 5vw;
+}
+
+.front-text {
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+}
+
+#front-page3 {
+    background-color: rgba(238, 237, 237, 0.476);
+}
+
+.front-img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+}
+
+.front-img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.front-img-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 950px) {
+    #menu {
+        padding: 0;
+    }
+
+    nav {
+        font-size: 25px; /* Reduce font size for smaller screens */
+        margin-left: 3em; /* Adjust margin for smaller screens */
+    }
+
+    nav ul li {
+        margin-left: 7vw; /* Adjust margin for smaller screens */
+    }
+    
+    /* You can add more specific styles or adjustments for smaller screens here */
+}
