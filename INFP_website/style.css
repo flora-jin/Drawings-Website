@@ -51,22 +51,21 @@ h1 {
 #menu {
     background-color: transparent;
     padding: 5px;
+    padding-left: 11%;
 }
 
 nav {
     font-size: 30px;
-    margin-left: 5em;
 }
 
 nav ul {
     list-style: none;
     margin-top: 1.0rem;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin-left: 3em;
+    margin-left: 30%;
 }
 
 nav ul li a {
@@ -83,7 +82,8 @@ nav ul li a:hover {
     justify-content: center;
     margin: 0 auto;
     width: 85%;
-    height: auto;
+    height: fit-content;
+    min-height: 600px;
     position: relative;
     max-width: 1200px;
     padding-bottom: 18vw;
@@ -92,7 +92,6 @@ nav ul li a:hover {
 .waving-img {
     display: flex;
     flex-wrap: wrap;
-    /* width: 45vw; */
     width: 44em;
     height: auto;
     position: absolute;
@@ -141,20 +140,42 @@ nav ul li a:hover {
     box-shadow: 0 32px 75px rgba(68,77,136,0.2);
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 950px) {
-    #menu {
-        padding: 0;
+@media screen and (max-width: 1000px) {
+    nav ul li {
+        margin-left: 25%;
     }
+}
 
-    nav {
-        font-size: 25px; /* Reduce font size for smaller screens */
-        margin-left: 3em; /* Adjust margin for smaller screens */
+@media screen and (max-width: 900px) {
+    nav ul li {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    nav ul li {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav ul li {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav ul li {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #menu {
+        padding-left: 7%;
     }
 
     nav ul li {
-        margin-left: 7vw; /* Adjust margin for smaller screens */
+        margin-left: 2%;
     }
-    
-    /* You can add more specific styles or adjustments for smaller screens here */
 }

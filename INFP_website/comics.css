@@ -54,18 +54,18 @@
     background: #404040;
 }
 
-.slider-wrapper .slide-button#prev-slide {
+.slider-wrapper .prev-slide {
     left: -25px;
     display: none;
 }
 
-.slider-wrapper .slide-button#next-slide {
+.slider-wrapper .next-slide {
     right: -25px;
 }
 
 .slider-wrapper .image-list {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(18, 1fr);
     gap: 0px;
     font-size: 0;
     list-style: none;
